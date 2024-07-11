@@ -96,7 +96,7 @@ body {
 
 .content {
   max-width: 1200px;
-  margin: 120px auto 20px;
+  margin: 20px auto 20px;
   padding: 0 15px;
 }
 
@@ -197,7 +197,6 @@ body {
   margin: 0;
 }
 
-/* Add animation */
 @keyframes fadeIn {
   from {
       opacity: 0;
