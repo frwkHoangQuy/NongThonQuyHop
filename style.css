@@ -39,15 +39,34 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 24px;
+@media (max-width: 768px) {
+  .filter {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .header p {
-    font-size: 16px;
-    width: 80%;
+
+  .filter div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .filter button {
+    width: calc(33.33% - 10px); 
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .filter button:last-child {
+    margin-right: 0; 
   }
 }
+
 
 .nav {
   height: 80px;
@@ -115,14 +134,17 @@ body {
 }
 
 .top-bar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
   animation: fadeIn 1s ease-in-out;
 }
 
 .breadcrumb {
+  min-width: 300px;
   font-size: 14px;
   color: #666;
 }
@@ -137,6 +159,7 @@ body {
 }
 
 .filter {
+  min-width: 300px;
   display: flex;
   align-items: center;
 }
