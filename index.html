@@ -8,16 +8,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
 </head>
 
 <body>
     <div class="header fade-in">
-        <h1>
-            XÂY DỰNG NÔNG THÔN MỚI HUYỆN QUỲ HỢP
-        </h1>
-        <p>
-            Xây dựng xóm, bản nông thôn mới là một trong những nhiệm vụ chính trị quan trọng đang được triển
-            khai ở huyện miền núi Quỳ Hợp. Sau hơn 10 năm xây dựng nông thôn mới, thực tế đã khẳng định đây là chương
+        <h1>XÂY DỰNG NÔNG THÔN MỚI HUYỆN QUỲ HỢP</h1>
+        <p>Xây dựng xóm, bản nông thôn mới là một trong những nhiệm vụ chính trị quan trọng đang được triển khai
+            ở huyện miền núi Quỳ Hợp. Sau hơn 10 năm xây dựng nông thôn mới, thực tế đã khẳng định đây là chương
             trình thúc đẩy phát triển toàn diện, góp phần làm thay đổi bộ mặt nông thôn,nâng cao đời sống vật
             chất tinh thần cho người dân và từng bước xây dựng Quỳ Hợp thành huyện khá nhất nơi miền Tây xứ Nghệ.
         </p>
@@ -29,20 +30,20 @@
     <div class="content">
         <div class="top-bar">
             <div class="breadcrumb slide-in-left">
-                <a href="#">Trang chủ</a>
-                &gt;
+                <a href="#">Trang chủ</a> &gt;
                 <a href="#">Tin tức - Sự kiện</a>
             </div>
             <div class="filter slide-in-left">
                 <div>
-                    <button class="active">Tất cả</button>
-                    <button>Tin tức</button>
-                    <button>Sự kiện</button>
+                    <button class="filter-button active" data-filter="all">Tất cả</button>
+                    <button class="filter-button" data-filter="news">Tin tức</button>
+                    <button class="filter-button" data-filter="events">Sự kiện</button>
                 </div>
                 <input placeholder="Tìm kiếm bài viết..." type="text" />
             </div>
         </div>
         <div class="news-grid"></div>
+        <div id="pagination-container"></div>
     </div>
     <script src="main.js"></script>
     <div class="footer">
